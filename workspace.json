@@ -1,6 +1,31 @@
 {
   "version": 2,
   "projects": {
+    "axios-config": {
+      "root": "libs/axios-config",
+      "sourceRoot": "libs/axios-config/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/axios-config/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/axios-config"
+          ],
+          "options": {
+            "jestConfig": "libs/axios-config/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "backend-nx": {
       "root": "apps/backend-nx",
       "sourceRoot": "apps/backend-nx/src",

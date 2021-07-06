@@ -32,6 +32,9 @@
     ]
   },
   "projects": {
+    "axios-config": {
+      "tags": []
+    },
     "backend-nx": {
       "tags": []
     },

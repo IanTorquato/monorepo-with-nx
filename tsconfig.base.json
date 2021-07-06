@@ -18,7 +18,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monorepo-nx-silbeck-clear/axios-config": [
+        "libs/axios-config/src/index.ts"
+      ]
+    }
   },
   "exclude": [
     "node_modules",
