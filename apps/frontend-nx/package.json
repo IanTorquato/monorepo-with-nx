@@ -1,0 +1,35 @@
+{
+  "name": "@monorepo-nx-silbeck-clear/frontend-nx",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@nrwl/next": "12.5.6",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "document-register-element": "1.13.1",
+    "next": "10.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "regenerator-runtime": "0.13.7"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/preset-env": "7.12.13",
+    "@babel/preset-react": "7.12.13",
+    "@babel/preset-typescript": "7.12.13",
+    "@nrwl/cypress": "12.5.6",
+    "@nrwl/react": "12.5.6",
+    "@nrwl/web": "12.5.6",
+    "@testing-library/react": "11.2.6",
+    "@types/react": "17.0.3",
+    "@types/react-dom": "17.0.3",
+    "babel-jest": "26.2.2",
+    "cypress": "^7.3.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.23.1",
+    "eslint-plugin-react-hooks": "4.2.0"
+  }
+}

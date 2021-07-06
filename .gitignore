@@ -1,8 +1,8 @@
-/coverage
-/dist
-/node_modules
-/out-tsc
-/tmp
+coverage
+dist
+node_modules
+out-tsc
+tmp
 
 yarn-error.log
 yarn.lock

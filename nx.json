@@ -34,6 +34,15 @@
   "projects": {
     "backend-nx": {
       "tags": []
+    },
+    "frontend-nx": {
+      "tags": []
+    },
+    "frontend-nx-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "frontend-nx"
+      ]
     }
   }
 }
