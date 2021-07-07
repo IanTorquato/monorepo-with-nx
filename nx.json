@@ -6,7 +6,8 @@
   "implicitDependencies": {
     "package.json": {
       "dependencies": "*",
-      "devDependencies": "*"
+      "devDependencies": "*",
+      "scripts": "*"
     },
     ".eslintrc.json": "*"
   },
@@ -43,7 +44,10 @@
       "tags": []
     },
     "frontend-nx": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": [
+        "backend-nx"
+      ]
     },
     "frontend-nx-e2e": {
       "tags": [],
