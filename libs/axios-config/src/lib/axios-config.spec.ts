@@ -1,7 +1,7 @@
-import { axiosConfig } from './axios-config';
+import { api } from './axios-config';
 
 describe('axiosConfig', () => {
   it('should work', () => {
-    expect(axiosConfig()).toEqual('axios-config');
+    expect(api).toBeDefined();
   });
 });
