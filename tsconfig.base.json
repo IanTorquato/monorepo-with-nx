@@ -21,6 +21,9 @@
     "paths": {
       "@monorepo-nx-silbeck-clear/axios-config": [
         "libs/axios-config/src/index.ts"
+      ],
+      "@monorepo-nx-silbeck-clear/front-components": [
+        "libs/front-components/src/index.ts"
       ]
     }
   },

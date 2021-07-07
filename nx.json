@@ -38,6 +38,9 @@
     "backend-nx": {
       "tags": []
     },
+    "front-components": {
+      "tags": []
+    },
     "frontend-nx": {
       "tags": []
     },

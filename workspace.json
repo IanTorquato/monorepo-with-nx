@@ -84,6 +84,31 @@
         }
       }
     },
+    "front-components": {
+      "root": "libs/front-components",
+      "sourceRoot": "libs/front-components/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/front-components/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/front-components"
+          ],
+          "options": {
+            "jestConfig": "libs/front-components/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "frontend-nx": {
       "root": "apps/frontend-nx",
       "sourceRoot": "apps/frontend-nx",
