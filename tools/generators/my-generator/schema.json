@@ -5,12 +5,36 @@
   "properties": {
     "name": {
       "type": "string",
-      "description": "Library name",
+      "description": "Defina o nome da lib",
       "$default": {
         "$source": "argv",
         "index": 0
       }
+    },
+    "type": {
+      "type": "string",
+      "description": "Defina o tipo da lib",
+      "x-prompt": {
+        "message": "Que tipo de lib você deseja gerar?",
+        "type": "list",
+        "items": [
+          {
+            "value": "data-access",
+            "label": "Data Access"
+          },
+          {
+            "value": "feature",
+            "label": "Feature"
+          },
+          {
+            "value": "state",
+            "label": "State Management"
+          }
+        ]
+      }
     }
   },
-  "required": ["name"]
+  "required": [
+    "name"
+  ]
 }

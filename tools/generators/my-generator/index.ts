@@ -1,12 +1,14 @@
 import { Tree, formatFiles, installPackagesTask } from '@nrwl/devkit';
 import { libraryGenerator } from '@nrwl/workspace/generators';
 
-export default async function (host: Tree, schema: any) {
-  await libraryGenerator(host, { name: schema.name });
+import { GeneratorOptions } from './schema';
+
+export default async function (host: Tree, schema: GeneratorOptions) {
+  await libraryGenerator(host, { name: `${schema.name}-${schema.type}` });
   await formatFiles(host);
   return () => {
     installPackagesTask(host);
   };
 }
 
-// yarn nx workspace-generator my-generator excluir-lib
+// yarn nx workspace-generator my-generator delete
