@@ -9,3 +9,5 @@ app.use(cors());
 app.get('/', (request, response)=> response.json({message: 'Backend: Hello Silbeck'}));
 
 app.listen(PORT, () => console.log(`--> Server running in http://localhost:${PORT} <--`));
+
+console.log(process.env.TESTE);
