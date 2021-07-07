@@ -1,3 +1,4 @@
+.cache-nx
 coverage
 dist
 node_modules
