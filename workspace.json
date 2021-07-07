@@ -91,6 +91,12 @@
               }
             ]
           }
+        },
+        "custom-echo": {
+          "executor": "./tools/executors/echo-command:echo",
+          "options": {
+            "textToEcho": "Hello World"
+          }
         }
       }
     },
