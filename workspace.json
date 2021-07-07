@@ -81,6 +81,16 @@
             "jestConfig": "apps/backend-nx/jest.config.js",
             "passWithNoTests": true
           }
+        },
+        "hello": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "echo Hello Silbeck ♥"
+              }
+            ]
+          }
         }
       }
     },
